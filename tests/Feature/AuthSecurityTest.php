@@ -23,6 +23,14 @@ class AuthSecurityTest extends TestCase
             ->assertDontSee('Password:');
     }
 
+    public function test_login_form_uses_https_behind_a_reverse_proxy(): void
+    {
+        $this->get('/login', ['X-Forwarded-Proto' => 'https'])
+            ->assertOk()
+            ->assertSee('href="https://localhost:8000/build/assets/', false)
+            ->assertSee('action="https://localhost:8000/login"', false);
+    }
+
     public function test_demo_seeder_rejects_reused_passwords(): void
     {
         config([

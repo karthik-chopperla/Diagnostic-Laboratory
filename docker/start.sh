@@ -7,6 +7,8 @@ sed -i "s/<VirtualHost \*:80>/<VirtualHost *:${port}>/" /etc/apache2/sites-avail
 
 php artisan migrate --force
 
-php artisan demo:seed-once
+if [ "${DEMO_SEED_ON_START:-false}" = "true" ]; then
+    php artisan demo:seed-once
+fi
 
 exec apache2-foreground

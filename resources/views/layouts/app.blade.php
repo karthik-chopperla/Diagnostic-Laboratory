@@ -44,6 +44,7 @@
             ['route' => 'portal.patient', 'label' => 'Patient Portal', 'match' => 'portal.patient'],
         ],
         'Admin & Integrations' => [
+            ['route' => 'admin.staff-access', 'label' => 'Staff Access Requests', 'match' => 'admin.staff-access*'],
             ['route' => 'admin.hr', 'label' => 'HR & Staff', 'match' => 'admin.hr*'],
             ['route' => 'admin.finance', 'label' => 'Finance & Accounting', 'match' => 'admin.finance*'],
             ['route' => 'admin.crm', 'label' => 'Marketing & CRM', 'match' => 'admin.crm*'],

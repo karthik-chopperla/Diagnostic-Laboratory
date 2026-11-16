@@ -61,4 +61,6 @@ The repository includes a [`Dockerfile`](./Dockerfile) and [`render.yaml`](./ren
 5. To add sample records, set unique `DEMO_*_PASSWORD` values in a private environment and run `php artisan db:seed --force` once.
 6. With Render Auto-Deploy enabled, pushes to the linked branch trigger a new deploy.
 
+Staff can request accounts from the sign-in page. New accounts remain inactive until an administrator approves them and assigns a role from **Staff Access Requests**. Seed the initial administrator before approving requests.
+
 Keep `.env` and database credentials out of Git. Render's local filesystem is temporary, so uploaded files may not persist between deployments. This setup is for demos with synthetic data only, not real patient information.

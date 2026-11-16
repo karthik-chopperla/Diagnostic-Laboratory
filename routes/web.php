@@ -11,15 +11,22 @@ use App\Http\Controllers\NetworkPortalController;
 use App\Http\Controllers\PatientController;
 use App\Http\Controllers\QualityInventoryController;
 use App\Http\Controllers\SampleController;
+use App\Http\Controllers\StaffAccountController;
 use Illuminate\Support\Facades\Route;
 
 // Authentication Routes (Public)
 Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+Route::get('/register', [AuthController::class, 'showRegistration'])->name('register');
+Route::post('/register', [AuthController::class, 'register'])->middleware('throttle:5,1')->name('register.post');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 // Protected Diagnostic Lab System (Requires Login & Role Access)
 Route::middleware(['auth', 'role.access'])->group(function () {
+    Route::get('/admin/staff-access', [StaffAccountController::class, 'index'])->name('admin.staff-access');
+    Route::patch('/admin/staff-access/{user}/approve', [StaffAccountController::class, 'approve'])->name('admin.staff-access.approve');
+    Route::delete('/admin/staff-access/{user}', [StaffAccountController::class, 'reject'])->name('admin.staff-access.reject');
+
     // 1. Dashboard & Global Search
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
     Route::get('/search', [DashboardController::class, 'search'])->name('search');

@@ -63,6 +63,10 @@
             </button>
         </form>
 
+        <p class="mt-5 text-center text-xs text-slate-500">
+            Need staff access?
+            <a href="{{ route('register') }}" class="font-semibold text-teal-700 hover:text-teal-800">Request an account</a>
+        </p>
     </div>
 </div>
 </body>

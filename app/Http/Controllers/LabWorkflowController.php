@@ -41,7 +41,7 @@ class LabWorkflowController extends Controller
             ->when($deptId, fn ($q) => $q->where('department_id', $deptId))
             ->when($status, fn ($q) => $q->where('status', $status))
             ->when($priority, fn ($q) => $q->where('priority', $priority))
-            ->orderByRaw("FIELD(priority, 'STAT', 'Urgent', 'Routine')")
+            ->orderByRaw("CASE priority WHEN 'STAT' THEN 0 WHEN 'Urgent' THEN 1 WHEN 'Routine' THEN 2 ELSE 3 END")
             ->latest()
             ->paginate(15);
 
@@ -84,7 +84,7 @@ class LabWorkflowController extends Controller
                 $sub->whereHas('patient', fn ($pq) => $pq->where('name', 'like', "%{$search}%")->orWhere('uhid', 'like', "%{$search}%"))
                     ->orWhereHas('sample', fn ($sq) => $sq->where('sample_id_code', 'like', "%{$search}%")->orWhere('barcode_value', 'like', "%{$search}%"));
             }))
-            ->orderByRaw("FIELD(priority, 'STAT', 'Urgent', 'Routine')")
+            ->orderByRaw("CASE priority WHEN 'STAT' THEN 0 WHEN 'Urgent' THEN 1 WHEN 'Routine' THEN 2 ELSE 3 END")
             ->latest()
             ->paginate(15);
 

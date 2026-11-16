@@ -16,14 +16,14 @@ The Laravel application serves the web interface and connects to PostgreSQL. Vit
 
 ## Technology
 
-- Laravel 13 and PHP 8.3 or later
+- Laravel 13 and PHP 8.4.1 or later
 - Blade, Tailwind CSS 4, and Vite
 - SQLite, MySQL/MariaDB, or PostgreSQL
 - Docker for the Render deployment
 
 ## Run locally
 
-Requirements: PHP 8.3+, Composer 2+, Node.js, npm, and a supported database.
+Requirements: PHP 8.4.1+, Composer 2+, Node.js, npm, and a supported database.
 
 ```powershell
 composer install

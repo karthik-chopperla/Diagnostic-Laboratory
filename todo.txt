@@ -1,0 +1,412 @@
+Using latest laravel and xampp db pathology create this project in light bg and lab color 
+
+Complete Diagnostic Lab Management Software – Modules
+1. Dashboard & Analytics
+- Total patients registered.
+- Today's appointments.
+- Today's sample collections.
+- Pending investigations.
+- Reports awaiting approval.
+- Reports delivered.
+- Critical results alerts.
+- Total daily revenue.
+- Pending payments.
+- Outstanding corporate payments.
+- Department-wise workload.
+- Machine-wise workload.
+- Sample rejection statistics.
+- Revenue and test volume charts.
+2. Patient Management
+- Patient registration.
+- Unique Patient ID (UHID).
+- Patient demographics.
+- Age, gender, DOB and contact details.
+- Address and emergency contact.
+- Patient medical history.
+- Allergies and clinical history.
+- Previous investigation history.
+- Patient document uploads.
+- Patient profile with complete test history.
+- Duplicate patient detection.
+- Merge duplicate patient records.
+- Patient visit history.
+- Family member linking.
+- Walk-in and registered patient support.
+3. Appointment Management
+- Online appointment booking.
+- Walk-in registration.
+- Appointment calendar.
+- Doctor-wise appointments.
+- Department-wise appointments.
+- Test-specific appointments.
+- Home sample collection appointments.
+- Appointment rescheduling and cancellation.
+- Appointment reminders.
+- Appointment status tracking.
+- Appointment confirmation through SMS/WhatsApp.
+4. Doctor & Referrer Management
+- Doctor registration.
+- Doctor specialization.
+- Hospital and clinic details.
+- Contact information.
+- Referral source tracking.
+- Doctor-wise patient referrals.
+- Doctor-wise test volume.
+- Referral commission configuration, where legally permitted.
+- Doctor referral reports.
+- Doctor login portal.
+- Digital report sharing with referring doctors.
+5. Test & Investigation Master
+This is one of the most important modules.
+- Create investigation categories.
+- Haematology.
+- Biochemistry.
+- Clinical Pathology.
+- Microbiology.
+- Serology.
+- Immunology.
+- Histopathology.
+- Cytology.
+- Molecular Diagnostics.
+- Radiology.
+- Ultrasound.
+- X-ray.
+- CT Scan.
+- MRI.
+- ECG.
+- Echo.
+- Create individual tests.
+- Test code and name.
+- Test description.
+- Sample type.
+- Container type.
+- Sample quantity.
+- Processing time (TAT).
+- Normal/reference ranges.
+- Gender-specific reference ranges.
+- Age-specific reference ranges.
+- Methodology.
+- Units of measurement.
+- Department assignment.
+- Test preparation instructions.
+- Fasting requirements.
+- Critical value configuration.
+- Test availability by branch.
+6. Test Packages & Health Checkup Packages
+- Create custom packages.
+- Full Body Checkup.
+- Basic Health Checkup.
+- Diabetes Profile.
+- Thyroid Profile.
+- Liver Function Test.
+- Kidney Function Test.
+- Cardiac Profile.
+- Women's Health Package.
+- Men's Health Package.
+- Package-wise pricing.
+- Package discounts.
+- Package test mapping.
+- Corporate health checkup packages.
+- Preventive health packages.
+7. Billing & Invoicing
+- Patient billing.
+- Test-wise billing.
+- Package billing.
+- Discount management.
+- Coupon codes.
+- GST configuration where applicable.
+- Multiple payment methods.
+- Cash, UPI, card, bank transfer.
+- Partial payments.
+- Advance payments.
+- Refund management.
+- Credit notes.
+- Outstanding balance.
+- Invoice printing.
+- Receipt generation.
+- Daily cash collection report.
+- Counter-wise billing.
+- Branch-wise revenue reports.
+8. Sample Collection & Accession Management
+Core laboratory module
+- Sample registration.
+- Unique Sample ID.
+- Barcode generation.
+- Barcode printing.
+- Sample type identification.
+- Sample collection date and time.
+- Collection location.
+- Collector assignment.
+- Sample container tracking.
+- Sample quantity recording.
+- Sample acceptance and rejection.
+- Rejection reasons.
+- Sample recollection.
+- Sample receiving.
+- Sample accession number.
+- Sample status tracking.
+- Sample transfer between departments.
+- Sample storage location.
+- Sample disposal records.
+- Sample traceability.
+9. Phlebotomy & Home Sample Collection
+- Phlebotomist registration.
+- Home collection booking.
+- Collection route planning.
+- Assign collection staff.
+- Patient location and address.
+- Collection time slots.
+- Collection status.
+- Sample pickup confirmation.
+- Barcode scanning.
+- Collection checklist.
+- Collection staff mobile interface.
+- Cash collection tracking.
+- Home collection charges.
+- Phlebotomist performance reports.
+10. Laboratory Department Management
+Each department should have its own dashboard and workflow.
+Department	Main functionality
+Haematology	CBC, ESR, blood cell analysis
+Biochemistry	LFT, KFT, glucose, lipid profile
+Microbiology	Culture, sensitivity, organism identification
+Serology	Antigen and antibody testing
+Immunology	Hormone and immunological tests
+Clinical Pathology	Urine, stool and body fluid analysis
+Histopathology	Tissue processing and examination
+Cytology	Cellular examination
+Molecular Diagnostics	PCR and molecular tests
+Radiology	X-ray, CT, MRI, ultrasound
+Cardiology	ECG, Echo and related investigations
+
+Department-specific work queues, test assignment, result entry, quality checks and reporting should be supported.
+11. Laboratory Worklist & Processing
+- Department-wise worklists.
+- Technician assignment.
+- Pending test queue.
+- Sample received status.
+- Test processing status.
+- Work-in-progress tracking.
+- Test completion.
+- Repeat test requests.
+- Dilution and rerun records.
+- Result entry.
+- Result verification.
+- Result approval.
+- Priority processing.
+- STAT / emergency test handling.
+- Turnaround time monitoring.
+- Department workload monitoring.
+12. Laboratory Equipment & Analyzer Management
+- Analyzer registration.
+- Equipment ID.
+- Equipment manufacturer and model.
+- Equipment location.
+- Department assignment.
+- Calibration schedule.
+- Maintenance schedule.
+- Preventive maintenance records.
+- Breakdown logs.
+- Equipment downtime.
+- Reagent consumption.
+- Analyzer usage statistics.
+- Equipment service history.
+- Integration-ready analyzer interfaces.
+13. Reagent & Inventory Management
+- Reagent master.
+- Consumables management.
+- Reagent batch numbers.
+- Expiry date tracking.
+- Stock-in and stock-out.
+- Supplier management.
+- Purchase orders.
+- Goods receipt.
+- Department-wise stock.
+- Minimum stock alerts.
+- Expiry alerts.
+- Reagent consumption.
+- Inventory valuation.
+- Purchase reports.
+14. Result Entry & Verification
+- Manual result entry.
+- Parameter-wise result entry.
+- Numeric and text-based results.
+- Units and reference ranges.
+- Automatic calculation of derived parameters.
+- Abnormal result flags.
+- Critical value flags.
+- Previous result comparison.
+- Result validation.
+- Technician submission.
+- Pathologist review.
+- Result approval.
+- Amendment and correction history.
+- Electronic signatures.
+- Result audit trail.
+15. Report Generation & Delivery
+Essential for the reel demonstration
+- Professional laboratory report templates.
+- Patient details.
+- Referring doctor details.
+- Test-wise results.
+- Reference ranges.
+- Abnormal value highlighting.
+- Critical result alerts.
+- Laboratory branding and logo.
+- Pathologist signature.
+- QR code verification.
+- PDF report generation.
+- Print reports.
+- Email reports.
+- WhatsApp report delivery.
+- Patient portal report download.
+- Report delivery history.
+- Revised report management.
+- Bilingual report templates.
+16. Quality Control (QC) & Quality Assurance (QA)
+- Internal quality control.
+- External quality assessment.
+- QC material management.
+- QC lot and expiry tracking.
+- Control level configuration.
+- QC result entry.
+- Levey-Jennings charts.
+- Westgard rule alerts.
+- Calibration records.
+- Corrective and preventive actions (CAPA).
+- Non-conformance management.
+- Quality incident reporting.
+- QC approval workflows.
+- Quality audit reports.
+17. Critical Value & Emergency Management
+- Configure critical value thresholds.
+- Automatic critical result detection.
+- Alert pathologist.
+- Alert responsible technician.
+- Notify referring doctor.
+- Critical result acknowledgement.
+- Communication timestamp.
+- Escalation if unacknowledged.
+- Emergency test prioritisation.
+- Critical result communication log.
+18. Corporate & Hospital Management
+- Corporate client registration.
+- Hospital and nursing home registration.
+- Company-wise pricing.
+- Corporate billing.
+- Credit limits.
+- Monthly invoicing.
+- Contract management.
+- Employee health checkup programmes.
+- Bulk patient registration.
+- Corporate payment tracking.
+- Corporate-wise revenue reports.
+- Corporate portal.
+- Referral source analytics.
+19. Doctor Portal
+- Doctor login.
+- Patient referral.
+- Test booking.
+- View patient reports with appropriate consent and access.
+- Download PDF reports.
+- Previous investigation history.
+- Critical result notifications.
+- Referral statistics.
+20. Patient Portal & Mobile Access
+- Patient login.
+- Appointment booking.
+- Test booking.
+- Home sample collection booking.
+- View invoices.
+- Online payments.
+- Download reports.
+- View previous reports.
+- Track sample status.
+- Receive notifications.
+- Update profile.
+- Family member profiles.
+21. Multi-Branch & Franchise Management
+Particularly important for large diagnostic chains.
+- Multiple branch registration.
+- Branch-wise dashboards.
+- Branch-specific pricing.
+- Branch-specific test availability.
+- Central patient database.
+- Branch-wise sample collection.
+- Inter-branch sample transfer.
+- Central processing laboratory.
+- Branch-wise inventory.
+- Branch-wise staff.
+- Consolidated reporting.
+- Branch-wise revenue comparison.
+- Central administration.
+22. HR & Employee Management
+- Employee registration.
+- Department assignment.
+- Employee roles and permissions.
+- Technician management.
+- Pathologist management.
+- Radiologist management.
+- Phlebotomist management.
+- Attendance.
+- Shift management.
+- Leave management.
+- Work allocation.
+- Performance reports.
+- Professional qualification and credential records.
+23. Finance & Accounting
+- Income and expense tracking.
+- Daily cashbook.
+- Payment reconciliation.
+- Vendor payments.
+- Purchase expenses.
+- Salary expenses.
+- Refund records.
+- Branch-wise profit and loss.
+- Outstanding receivables.
+- Corporate credit tracking.
+- Financial reports.
+- Export to accounting software.
+24. Marketing & CRM
+- Patient lead management.
+- Campaign tracking.
+- Health checkup promotions.
+- Patient follow-up reminders.
+- Preventive health checkup reminders.
+- Doctor relationship management.
+- Referral source analytics.
+- Patient feedback.
+- Review management.
+- Customer support tickets.
+25. Compliance & Administration
+- User management.
+- Role-based access control.
+- Audit logs.
+- Data backup.
+- Access history.
+- Consent management.
+- Patient data privacy.
+- Report amendment logs.
+- Document management.
+- Configurable report approval workflows.
+- Laboratory licence and accreditation records.
+- NABL quality documentation support.
+- Configurable retention policies.
+26. Advanced Integrations & Automation
+- Barcode scanners.
+- Barcode printers.
+- Thermal printers.
+- Biochemistry analyzer integration.
+- Haematology analyzer integration.
+- HL7 integration.
+- ASTM integration.
+- DICOM integration for radiology.
+- PACS integration.
+- RIS integration.
+- FHIR-compatible interfaces.
+- SMS gateway.
+- WhatsApp Business API.
+- Email gateway.
+- Payment gateway.
+- Accounting software integration.
+- Automated report notifications.

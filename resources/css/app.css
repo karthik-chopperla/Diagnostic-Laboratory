@@ -1,0 +1,38 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-lab-50: #f0fdfa;
+    --color-lab-100: #ccfbf1;
+    --color-lab-200: #99f6e4;
+    --color-lab-500: #14b8a6;
+    --color-lab-600: #0d9488;
+    --color-lab-700: #0f766e;
+    --color-lab-800: #115e59;
+    --color-lab-900: #134e4a;
+}
+
+.tabular-nums {
+    font-variant-numeric: tabular-nums;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    body {
+        background: #ffffff !important;
+        color: #0f172a !important;
+    }
+    .print-area {
+        box-shadow: none !important;
+        border: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+}

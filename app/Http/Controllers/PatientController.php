@@ -29,7 +29,7 @@ class PatientController extends Controller
         $duplicates = Patient::where('is_merged', false)
             ->selectRaw('phone, name, COUNT(*) as cnt')
             ->groupBy('phone', 'name')
-            ->having('cnt', '>', 1)
+            ->havingRaw('COUNT(*) > ?', [1])
             ->get();
 
         return view('patients.index', compact('patients', 'branches', 'corporates', 'duplicates', 'search'));

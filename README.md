@@ -63,4 +63,6 @@ The repository includes a [`Dockerfile`](./Dockerfile) and [`render.yaml`](./ren
 
 Staff can request accounts from the sign-in page. New accounts remain inactive until an administrator approves them and assigns a role from **Staff Access Requests**. Seed the initial administrator before approving requests.
 
+On Render Free, which has no Shell or one-off jobs, seed the initial accounts by temporarily setting `DEMO_SEED_ON_START=true`. The container runs `demo:seed-once` after migrations and records completion in the database cache. Once the deploy logs report that seeding completed, set the variable back to `false`.
+
 Keep `.env` and database credentials out of Git. Render's local filesystem is temporary, so uploaded files may not persist between deployments. This setup is for demos with synthetic data only, not real patient information.

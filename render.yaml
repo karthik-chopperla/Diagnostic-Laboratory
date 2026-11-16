@@ -13,7 +13,7 @@ services:
       - key: APP_DEBUG
         value: "false"
       - key: DEMO_SEED_ON_START
-        value: "true"
+        value: "false"
       - key: APP_KEY
         generateValue: true
       - key: APP_URL

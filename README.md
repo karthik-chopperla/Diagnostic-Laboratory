@@ -59,5 +59,6 @@ The repository includes a [`Dockerfile`](./Dockerfile) and [`render.yaml`](./ren
 3. Set `DB_URL` to the Supabase URI with SSL required, and set `APP_URL` to the Render HTTPS address.
 4. Deploy. The container runs Laravel migrations before starting the web server.
 5. To add sample records, set unique `DEMO_*_PASSWORD` values in a private environment and run `php artisan db:seed --force` once.
+6. With Render Auto-Deploy enabled, pushes to the linked branch trigger a new deploy.
 
 Keep `.env` and database credentials out of Git. Render's local filesystem is temporary, so uploaded files may not persist between deployments. This setup is for demos with synthetic data only, not real patient information.

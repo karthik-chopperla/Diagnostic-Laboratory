@@ -3,6 +3,7 @@ services:
     name: pathology-lis-demo
     runtime: docker
     plan: free
+    autoDeployTrigger: commit
     dockerfilePath: ./Dockerfile
     dockerContext: .
     healthCheckPath: /up

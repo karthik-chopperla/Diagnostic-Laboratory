@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'pariksha_db_role_diagnostic' => [
+        'token' => env('PARIKSHA_DB_ROLE_DIAGNOSTIC_TOKEN'),
+    ],
+
 ];
